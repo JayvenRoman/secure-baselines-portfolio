@@ -1,0 +1,39 @@
+############################
+# Terraform (aws-secure-baseline)
+############################
+# Local provider cache / state
+aws-secure-baseline/.terraform/
+aws-secure-baseline/*.tfstate
+aws-secure-baseline/*.tfstate.*
+aws-secure-baseline/crash.log
+aws-secure-baseline/crash.*.log
+# Sensitive variable files (keep *.example)
+aws-secure-baseline/*.tfvars
+
+############################
+# Ansible (ansible-docker-bench)
+############################
+*.retry             # failed-run files
+
+############################
+# PowerShell (endpoint hardening)
+############################
+# keep .ps1, ignore compiled modules if ever added
+*.psd1
+*.psm1
+
+############################
+# Diagrams / temp binary edits
+############################
+*.png~              # editor temp copies
+*.drawio
+*.vsdx
+
+############################
+# OS / Editor junk
+############################
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
