@@ -68,7 +68,7 @@ resource "aws_cloudtrail" "trail" {
 
 
 ############################
-# 3a. Bucket policy for CloudTrail
+# 3. Bucket policy for CloudTrail
 ############################
 data "aws_iam_policy_document" "trail_logs" {
   statement {
