@@ -1,0 +1,19 @@
+---
+
+- name: Run Docker Bench Security
+  hosts: localhost
+  tasks:
+    - name: Pull docker-bench-security image
+      community.docker.docker_image:
+        name: docker/docker-bench-security
+        source: pull
+
+- name: Execute container and save JSON output
+  community.docker.docker_container:
+     name: docker_bench
+     image: docket/docker-bench-security
+     command: ["-l", "-j", "-output", "/tmp/bench.json"]
+
+     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+     cleanup: yes

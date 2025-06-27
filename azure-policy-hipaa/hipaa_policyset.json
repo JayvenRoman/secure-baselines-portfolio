@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "displayName": "HIPAA Mini Policy Set",
+    "description": "Demo initiative mapping two Azure built-ins to HIPAA 164.312",
+    "metadata": { "category": "HIPAA" },
+    "policyDefinitions": [
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/RequireSecureTransfer",
+        "policyDefinitionReferenceId": "secureTransfer",
+        "parameters": {}
+      },
+      {
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/EncryptDisks",
+        "policyDefinitionReferenceId": "encryptDisks",
+        "parameters": {}
+      }
+    ]
+  }
+}
