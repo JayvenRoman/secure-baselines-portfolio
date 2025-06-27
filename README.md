@@ -14,6 +14,9 @@ A **repeatable, minimum-viable secure AWS environment** built with Terraform to 
 
 All resources + tags live in main.tf—single command reproducible; no drift.
 
+https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/use-terraform-to-automatically-enable-amazon-guardduty-for-an-organization.html
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudtrail
+
 ---
 
 ## 🔐 What It Deploys
